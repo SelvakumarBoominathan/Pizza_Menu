@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header.jsx';
-import Menu from './components/Header.jsx';
-import Footer from './components/Header.jsx';
+import Menu from './components/Menu.jsx';
+import Footer from './components/Footer.jsx';
 import './App.css'
 
 function App() {
