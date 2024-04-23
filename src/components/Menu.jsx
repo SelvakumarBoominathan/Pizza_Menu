@@ -1,13 +1,16 @@
 import React from 'react';
-import Data from 'data.js';
 
-const Menu = (props) => {
+const Menu = ({ pizzas }) => {
   return (
     <div>
-      <img src={props.photoName} alt={props.name} />
-      <h5>Name: {props.name}</h5>
-      <h3>Price: {props.price}</h3>
-      <p>Available : {props.soldOut ? "No" : "Yes"}</p>
+      {pizzas.map((pizza, index) => (
+        <div key={index}>
+          <img src={pizza.photoName} alt={pizza.name} />
+          <h5>Name: {pizza.name}</h5>
+          <h3>Price: {pizza.price}</h3>
+          <p>Available : {pizza.soldOut ? "No" : "Yes"}</p>
+        </div>
+      ))}
     </div>
   )
 }
