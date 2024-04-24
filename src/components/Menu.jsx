@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Menu = ({ pizzas }) => {
+  
+
   return (
     <div className='menu'>
       <h2>OUR MENU</h2>
