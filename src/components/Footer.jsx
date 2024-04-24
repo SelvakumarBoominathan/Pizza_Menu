@@ -6,6 +6,7 @@ const Footer = () => {
   const openHour = 12;
   const colseHour = 22;
   const isOpen = hour >= openHour && hour <= colseHour;
+  // const isOpen = true;
 
   return (
     <footer className='footer'>
@@ -26,7 +27,7 @@ export default Footer;
 const Button = (props) => {
   return (
     <div>
-      <button className={`${props.isOpen ? 'btn' : 'disabled'}`} disabled = {!props.isOpen} >Order</button>
+      <button className='btn' >Order</button>
     </div>
   )
 }

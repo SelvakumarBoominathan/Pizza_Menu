@@ -8,8 +8,8 @@ const Menu = ({ pizzas }) => {
       <h2>OUR MENU</h2>
       <div className='pizzas'>
         {pizzas.map((pizza, index) => (
-          <div key={index} className='pizza'>
-            <img src={pizza.photoName} className={pizza.soldOut ? 'sold-out': 'pizza'} alt={pizza.name} />
+          <div key={index} className={pizza.soldOut ? 'pizza sold-out': 'pizza'}>
+            <img src={pizza.photoName}  alt={pizza.name} />
             <div>
               <h3>{pizza.name}</h3>
               <p>{pizza.ingredients}</p>
