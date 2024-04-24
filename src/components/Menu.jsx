@@ -8,7 +8,7 @@ const Menu = ({ pizzas }) => {
       <h2>OUR MENU</h2>
       <div className='pizzas'>
         {pizzas.map((pizza, index) => (
-          <div key={index} className={pizza.soldOut ? 'pizza sold-out': 'pizza'}>
+          <div key={index} className={`pizza ${pizza.soldOut ? 'sold-out'  : 'pizza'}`}>
             <img src={pizza.photoName}  alt={pizza.name} />
             <div>
               <h3>{pizza.name}</h3>
