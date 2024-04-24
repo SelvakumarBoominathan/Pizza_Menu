@@ -185,3 +185,22 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
 */
+
+@Media screen and (max-width: 450px){
+
+  .pizzas {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+}

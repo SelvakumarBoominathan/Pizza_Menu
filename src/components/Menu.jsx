@@ -7,14 +7,14 @@ const Menu = ({ pizzas }) => {
       <div className='pizzas'>
         {pizzas.map((pizza, index) => (
           <div key={index} className='pizza'>
-            <img src={pizza.photoName} className='pizza' alt={pizza.name} />
+            <img src={pizza.photoName} className={pizza.soldOut ? 'sold-out': 'pizza'} alt={pizza.name} />
             <div>
-              <h3>Name: {pizza.name}</h3>
-              <p>Price: {pizza.price}</p>
-              <p className='sold-out'>Available : {pizza.soldOut ? <span>No</span> : <span>Yes</span>}</p>
+              <h3>{pizza.name}</h3>
+              <p>{pizza.ingredients}</p>
+              <p className='sold-out'>{pizza.soldOut ? <span>SOLD OUT!</span> : <p>{pizza.price}</p>}</p>
+              
             </div>
           </div>
-
         ))}
       </div>
     </div>
