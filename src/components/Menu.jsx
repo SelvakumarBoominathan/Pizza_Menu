@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Menu = ({ pizzas }) => {
-  
+
 
   return (
     <div className='menu'>
@@ -13,8 +13,7 @@ const Menu = ({ pizzas }) => {
             <div>
               <h3>{pizza.name}</h3>
               <p>{pizza.ingredients}</p>
-              <p className='sold-out'>{pizza.soldOut ? <span>SOLD OUT!</span> : <p>{pizza.price}</p>}</p>
-              
+              <p className='sold-out'>{pizza.soldOut ? <span>SOLD OUT!</span> : <span>{pizza.price}</span>}</p>
             </div>
           </div>
         ))}

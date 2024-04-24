@@ -9,14 +9,26 @@ const Footer = () => {
 
   return (
     <footer className='footer'>
-      {isOpen && (
         <div className='order'>
-        <p>We are currentluy open until {closeHour}:00. Come visit us or Order Pizzas now!</p> 
-        <button className='btn'>Order</button>
+        {isOpen ? (
+        <p>We are currently open until {closeHour}:00. Come visit us or Order Pizzas now!</p> 
+      ) : <p>We are closed now. Come visit us or Order Pizzas in working hours!</p>}
+        <Button ShopStatus = {isOpen}/>
         </div>
-      )}
+      
     </footer>
   )
 }
 
 export default Footer;
+
+
+const Button = (props) => {
+  return (
+    <div>
+      <button className={`${props.isOpen ? 'btn' : 'disabled'}`} disabled = {!props.isOpen} >Order</button>
+    </div>
+  )
+}
+
+

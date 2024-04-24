@@ -114,6 +114,7 @@ body {
   width: 12rem;
   aspect-ratio: 1;
   align-self: start;
+  border-radius: 5px;
 }
 
 .pizza div {
@@ -169,6 +170,18 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   background-color: #edc84b;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.disabled{
+  filter: grayscale();
+  opacity: 0.8;
+  font-family: inherit;
+  border: 1px solid black;
+  font-size: 1.4rem;
+  font-weight: 500;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
   transition: all 0.2s;
