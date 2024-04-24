@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='footer'>
       {new Date().toLocaleTimeString()}. We are currentluy open!
     </div>
   )
