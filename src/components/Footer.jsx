@@ -4,8 +4,8 @@ const Footer = () => {
 
   const hour = new Date().getHours();
   const openHour = 12;
-  const colseHour = 22;
-  const isOpen = hour >= openHour && hour <= colseHour;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
   // const isOpen = true;
 
   return (
